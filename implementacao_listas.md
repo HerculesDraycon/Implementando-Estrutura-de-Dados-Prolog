@@ -91,42 +91,46 @@
 
 #### Cada elemento de L aparece em LL em duplicado.
 ```prolog
-    nth(X, 0, [X | _]).
-    nth(X, N, [_ | T]) :-
-        N > 0, N1 is N - 1, nth(X, N1, T).
+    double([], []).
+    double([H | T], [H, H | R]) :-
+        double(T, R).
 ```
 
 #### Sum é a soma dos elementos de Xs.
 ```prolog
-    nth(X, 0, [X | _]).
-    nth(X, N, [_ | T]) :-
-        N > 0, N1 is N - 1, nth(X, N1, T).
+    sum([], 0).
+    sum([H | T], Ac) :-
+        sum(T, X1), Ac is H + X1.
 ```
 
 #### L2 resulta da elminação de todos os X de L1.
 ```prolog
-    nth(X, 0, [X | _]).
-    nth(X, N, [_ | T]) :-
-        N > 0, N1 is N - 1, nth(X, N1, T).
+    delete([], _, []).
+    delete([X | T], X, L2) :-
+        delete(T, X, L2).
+    delete([H | T], X, [H | L2]) :-
+        X \= H, delete(T, X, L2).
 ```
 
 #### L2 resulta da elminação de um X de L1.
 ```prolog
-    nth(X, 0, [X | _]).
-    nth(X, N, [_ | T]) :-
-        N > 0, N1 is N - 1, nth(X, N1, T).
+    select(X, [X | T], T).
+    select(X, [H | T], [H | R]) :- 
+        X \= H, select(X, T, R).
 ```
 
 #### L2 resulta da inserção de X em L1.
 ```prolog
-    nth(X, 0, [X | _]).
-    nth(X, N, [_ | T]) :-
-        N > 0, N1 is N - 1, nth(X, N1, T).
+    insert(X, L1, [X | L1]).
 ```
 
 #### L2 é uma lista com todos os átomos de L1.
 ```prolog
-    nth(X, 0, [X | _]).
-    nth(X, N, [_ | T]) :-
-        N > 0, N1 is N - 1, nth(X, N1, T).
+    flatten([], []).
+    flatten([H | T], [H | R]) :-
+        atom(H),
+        flatten(T, R).
+    flatten([H | T], R) :-
+        \+ atom(H),
+        flatten(T, R).
 ```
