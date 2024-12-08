@@ -1,0 +1,12 @@
+• Título: Controle de medicação integrado com monitoramento de pacientes.
+
+• Motivação: Um problema muito recorrente na atualidade é o risco que muitos idosos e pessoas dependentes sofrem por não conseguirem de forma autônoma organizarem as suas rotinas de medicação e tratamentos, por exemplo, idosos que tratam problemas de memória sofrem drasticamente com a confusão dos remédios receitados corretos e os horários corretos para tomar, o que causa um desbalanceamento altamente prejudicial quando as medicações são consumidas de maneira errada ou não são consumidas.
+A proposta de um sistema que emite sinais sincronizados com os horários programados e libera somente as medicações corretas no horário é uma solução que contribui com a saúde de muitas pessoas que estão se tratando e numa situação de vulnerabilidade, além da possibilidade de integração com o centro de monitoramento que receberá avisos caso o aparelho detecte que o usuário não está consumindo os produtos corretamente.
+
+• Escopo: Esse projeto é promissor para toda a área da saúde, principalmente em setores que são focados no tratamento pós consulta ou pós-operatórios, como: Home-care, pacientes idosos e pacientes com problemas de memória. O aparelho não pode garantir 100% de aproveitamento em monitorar um paciente, mas reduz drasticamente os riscos associados à má gestão e esquecimento no consumo de medicações.
+
+• Tecnologias: Um Chip que se conecte com a internet, como o ESP-32; Um display que mostre horário e data para melhor orientação; Um dispositivo sonoro que possa funcionar como alarme e emissor de mensagens.
+
+• Conclusão: Com esse projeto sendo desenvolvido e distribuído em larga escala, a quantidade de casos relacionados à medicação incorreta deve cair significativamente, o que resulta numa melhora na saúde das pessoas em tratamento. Assim como os estudos garantem que o crescimento do número de remédios receitados é proporcional as chances de erros serem cometidos na medicação, para casos com muitos remédios e horários diferentes, essa se torna uma ferramenta imprescindível.
+
+• Referências: Divulgação de tecnologia semelhante em site: https://tecnosenior.com/controle-de-medicamentos-com-pers/#:~:text=O%20Vidafone%20Fixo%20é%20um,programados%20conforme%20necessidade%20do%20usuário, Nota Oficial do CRF (Conselho Regional de Farmácia) sobre casos e riscos: https://www.crf-pr.org.br/noticia/view/7920.
