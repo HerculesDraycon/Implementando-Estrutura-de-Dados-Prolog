@@ -44,11 +44,6 @@
 ### L1 é um conjunto equivalente a L2.
 <mark>Obs: Essa questão reaproveita o predicado de "subset" da questão anterior.</mark> 
 ```prolog
-    subset([], _).
-    subset([X|L1], L2) :-
-        member(X, L2),  % Verifica se X está em L2
-        subset(L1, L2).  % Continue verificando o restante
-
     equivalence(L1, L2) :-
         subset(L1, L2),
         subset(L2, L1).
